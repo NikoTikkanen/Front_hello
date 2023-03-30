@@ -3,11 +3,11 @@ import Button from '@mui/material/Button';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import TextField from '@mui/material/TextField';
-import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-material.css';
 import { AgGridReact } from 'ag-grid-react';
+import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import React, { useRef, useState } from 'react';
 
 
@@ -60,18 +60,7 @@ const handleChange = (event, value) => {
 return (
   
   <div>
-    <Tabs value={value} onChange={handleChange}>
-      <Tab value="Home" label="Home" />
-
-      <Tab value="Todo" label="Todolist" />
-      
-    </Tabs>
-
-    {value === 'Home' && <div>
-      <h1>Home</h1>
-    <div>Tervetuloa
-      </div></div>}
-      {value === 'Todo' && <div><h1>Todo</h1>
+   
     
      
     <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">
@@ -133,12 +122,12 @@ return (
       </AgGridReact>
   </div>
 
-        </div>}
+
  
   </div>
 );
 };
-export default Todolist
+export default Todolist;
 
     
 
